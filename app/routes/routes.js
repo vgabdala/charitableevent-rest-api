@@ -10,19 +10,19 @@ import {
 
 const routes   = express.Router() 
 
-// List Entities
+// List Events
 routes.get('/event', listEvents)
 
-//Create Entity
+//Create Event
 routes.post('/event', createEvent)
 
-//View Entity
+//View Event
 routes.get('/event/:eventId', viewEvent)
 
-//Edit Entity
+//Edit Event
 routes.patch('/event/:eventId', updateEvent)
 
-//Delete Entity
+//Delete Event
 routes.delete('/event/:eventId', deleteEvent)
 
 export default routes;
